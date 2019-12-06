@@ -43,7 +43,7 @@ namespace FinalProject_FallSemester
         private void frmOrderTotal_Load(object sender, EventArgs e)
         {
             try
-            {    // creates a SQL connection object that uses a connection to connect to the database
+            {    // create a SQL connection object that uses a connection to connect to the database
                 connection = new SqlConnection("Server= LAPTOP-S3ATB7HT\\SQLEXPRESS; Database= RESTAURANT_DB; Integrated Security=True;");
             }
             catch (SqlException ex)
@@ -53,7 +53,7 @@ namespace FinalProject_FallSemester
         }
 
         public void LoadGridview()
-        { // creates a SQL command object that uses a connection object to connect to the database and retrieve specific columns and caclculates  group totals
+        { // creates a SQL command object that uses a connection object to connect to the database and retrieves specific columns and caclculates  group totals
 
             connection.Open(); 
             command = new SqlCommand("Select TRANID, ItemOrder, sum(Price) AS PRICE From TRANSACTIONS GROUP BY TRANID, ROLLUP(ItemOrder)", connection);
