@@ -14,7 +14,7 @@ namespace FinalProject_FallSemester.Tests
         [TestMethod()]
         public void clearBoxTest()
         {
-           
+     //TODO Finish test
         }
 
         [TestMethod()]
