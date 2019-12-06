@@ -14,7 +14,7 @@ namespace FinalProject_FallSemester
     /*
      * Author: Ndeh Khan
      * Project: Final Project
-     * Class: C# V Capstone
+     * Class: C# / Capstone
      * Title: African Restaurant
      * Presentation date: 12/19/2019
      * */
