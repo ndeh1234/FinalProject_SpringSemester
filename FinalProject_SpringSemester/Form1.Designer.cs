@@ -1,6 +1,6 @@
 ﻿namespace FinalProject_FallSemester
 {
-    partial class Form1
+    partial class African_Restaurent
     {
         /// <summary>
         /// Required designer
@@ -619,7 +619,7 @@
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click_1);
             // 
-            // Form1
+            // African_Restaurent
             // 
             this.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -644,7 +644,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.grbMenu);
             this.Controls.Add(this.grbRegister);
-            this.Name = "Form1";
+            this.Name = "African_Restaurent";
             this.Text = "AFRICAN RESTAURANT";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.grbRegister.ResumeLayout(false);

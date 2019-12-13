@@ -18,7 +18,7 @@ namespace FinalProject_FallSemester
      * Title: African Restaurant
      * Presentation date: 12/19/2019
      * */
-    public partial class Form1 : Form
+    public partial class African_Restaurent : Form
     {  
         // Declaring  SQL Server objects or instances
         public SqlConnection connection;
@@ -32,7 +32,7 @@ namespace FinalProject_FallSemester
         string Price = "0";
         int min, max, a;
         public Random rand = new Random();
-        public Form1()
+        public African_Restaurent()
         {
             InitializeComponent();
         }
@@ -527,6 +527,11 @@ namespace FinalProject_FallSemester
             };
             }
 
+
+        public void LoadStatesTest(string[] actualStringArray)
+        {
+            throw new NotImplementedException();
+        }
 
         public void Vegetables()
         {
