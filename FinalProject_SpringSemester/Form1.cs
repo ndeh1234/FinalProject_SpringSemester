@@ -156,7 +156,7 @@ namespace FinalProject_FallSemester
             MessageBoxIcon.Information);
 
 
-            // Statements that check user response
+            // Statements that check user responsees
             if (button == DialogResult.No)
             {
                 MessageBox.Show("We're sorry ! \n Our priority is customer satisfaction.We'll take care of that next time. ?", "African Restaurant");
@@ -170,7 +170,7 @@ namespace FinalProject_FallSemester
         }
 
 
-        //Event handler for the drink combo box
+        //Event handler for the drink combo boxes
         private void cmbDrink_SelectedIndexChanged(object sender, EventArgs e)
         {
             try
@@ -527,6 +527,10 @@ namespace FinalProject_FallSemester
             };
             }
 
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
 
         public void LoadStatesTest(string[] actualStringArray)
         {

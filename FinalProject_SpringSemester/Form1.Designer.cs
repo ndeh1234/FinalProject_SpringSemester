@@ -29,6 +29,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(African_Restaurent));
             this.label1 = new System.Windows.Forms.Label();
             this.txtFName = new System.Windows.Forms.TextBox();
             this.grbRegister = new System.Windows.Forms.GroupBox();
@@ -58,12 +59,15 @@
             this.button2 = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
             this.panelDrink = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.btnReset = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.Place_Order = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.panelMeal = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panelVeg = new System.Windows.Forms.Panel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.lblNewID = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label11 = new System.Windows.Forms.Label();
@@ -75,21 +79,18 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.grbRegister.SuspendLayout();
             this.grbMenu.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panelOld.SuspendLayout();
             this.panelDrink.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel4.SuspendLayout();
             this.panelMeal.SuspendLayout();
-            this.panelVeg.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panelVeg.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -238,6 +239,7 @@
             this.label2.Size = new System.Drawing.Size(73, 15);
             this.label2.TabIndex = 2;
             this.label2.Text = "Last Name :";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // grbMenu
             // 
@@ -422,11 +424,21 @@
             this.panelDrink.TabIndex = 7;
             this.panelDrink.Visible = false;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(10, 7);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(147, 102);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // panel4
             // 
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel4.Controls.Add(this.btnReset);
-            this.panel4.Controls.Add(this.button4);
+            this.panel4.Controls.Add(this.Place_Order);
             this.panel4.Controls.Add(this.button3);
             this.panel4.Location = new System.Drawing.Point(336, 425);
             this.panel4.Name = "panel4";
@@ -443,15 +455,15 @@
             this.btnReset.UseVisualStyleBackColor = true;
             this.btnReset.Click += new System.EventHandler(this.button5_Click);
             // 
-            // button4
+            // Place_Order
             // 
-            this.button4.Location = new System.Drawing.Point(64, 3);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(79, 23);
-            this.button4.TabIndex = 15;
-            this.button4.Text = "Place Order";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.Place_Order.Location = new System.Drawing.Point(64, 3);
+            this.Place_Order.Name = "Place_Order";
+            this.Place_Order.Size = new System.Drawing.Size(79, 23);
+            this.Place_Order.TabIndex = 15;
+            this.Place_Order.Text = "Place Order";
+            this.Place_Order.UseVisualStyleBackColor = true;
+            this.Place_Order.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
@@ -473,6 +485,16 @@
             this.panelMeal.TabIndex = 9;
             this.panelMeal.Visible = false;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(10, 7);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(147, 102);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
+            // 
             // panelVeg
             // 
             this.panelVeg.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -482,6 +504,19 @@
             this.panelVeg.Size = new System.Drawing.Size(168, 116);
             this.panelVeg.TabIndex = 10;
             this.panelVeg.Visible = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.ErrorImage = global::FinalProject_FallSemester.Properties.Resources.Fanata;
+            this.pictureBox3.Image = global::FinalProject_FallSemester.Properties.Resources.Fanata;
+            this.pictureBox3.ImageLocation = "images";
+            this.pictureBox3.InitialImage = global::FinalProject_FallSemester.Properties.Resources.Fanata;
+            this.pictureBox3.Location = new System.Drawing.Point(8, 9);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(155, 102);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox3.TabIndex = 0;
+            this.pictureBox3.TabStop = false;
             // 
             // lblNewID
             // 
@@ -589,37 +624,6 @@
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click_1);
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.ImageLocation = "images";
-            this.pictureBox3.InitialImage = global::FinalProject_FallSemester.Properties.Resources.Rice;
-            this.pictureBox3.Location = new System.Drawing.Point(8, 9);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(155, 102);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox3.TabIndex = 0;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::FinalProject_FallSemester.Properties.Resources.Rice;
-            this.pictureBox2.Location = new System.Drawing.Point(10, 7);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(147, 102);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::FinalProject_FallSemester.Properties.Resources.Fanata;
-            this.pictureBox1.Location = new System.Drawing.Point(10, 7);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(147, 102);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // African_Restaurent
             // 
             this.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
@@ -657,13 +661,13 @@
             this.panelOld.ResumeLayout(false);
             this.panelOld.PerformLayout();
             this.panelDrink.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panelMeal.ResumeLayout(false);
-            this.panelVeg.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panelVeg.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -700,7 +704,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Button btnReset;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button Place_Order;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Panel panelMeal;
         private System.Windows.Forms.PictureBox pictureBox2;
