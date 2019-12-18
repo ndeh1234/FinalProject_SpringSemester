@@ -14,7 +14,7 @@ An SQL connection is established to the Restaurant DB created in Microsoft SQL S
 -	Transactions
 -	TrackID
 
-The customer table is going to contain the following attributes (columns):
+The customer table contains the following attributes (columns):
 -	First Name,
 -	Last Name, 
 -	Email
